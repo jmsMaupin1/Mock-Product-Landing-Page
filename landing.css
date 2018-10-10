@@ -7,8 +7,12 @@ header {
 	top: 15px;
 }
 
+section {
+	outline: none;
+}
+
 #about {
-	background: orange;
+	background: white;
 	height: 100vh;
 }
 #features {
@@ -168,4 +172,96 @@ header {
 .bold {
 	font-weight: bolder;
 	font-size: 1.5em;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 80%;
+	margin: 0 auto;
+	height: 70vh;
+	background: white;
+}
+
+.about-video {
+	position: relative;
+	height: 30vh;
+	background: url("./images/video-bg.jpeg");
+}
+
+.ag-cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ag-cell > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+.ag-cell > div > p {
+	width: 80%;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.ag-cell > div > .bold {
+	padding-top: 25px;
+}
+
+.parallax {
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax::before {
+	content: "";
+	background: black;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0.7;
+}
+
+.parallax-center {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+.play {
+	border: none;
+	background: blue;
+	text-align: center;
+	color: white;
+	height: 70px;
+	width: 70px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1.5em;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	padding-left: 10px;
+	transition: all .1s ease-in-out;
+}
+
+.play:hover {
+	background: white;
+	color: blue;
+}
+
+.video-banner {
+	padding-bottom: 15px;
 }
