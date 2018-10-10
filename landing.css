@@ -1,14 +1,65 @@
 * {
 	margin: 0;
 }
-header {
-	position: absolute;
-	width: 100%;
-	top: 15px;
-}
 
 section {
 	outline: none;
+}
+
+.nav-header {
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	top: 15px;
+	z-index: 1000;
+	transition: all .2s ease-in-out;
+}
+
+.nav-header-scrolled {
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background: white;
+	top: 0;
+	z-index: 1000;
+	transition: all .2s ease-in-out;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+}
+
+.navbar > p {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid transparent;
+	transition: all .2s ease-in-out;
+}
+
+.nav-link-scrolled {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent;
+	transition: all .2s ease-in-out;
+}
+
+.nav-link:hover {
+	border-bottom: 2px solid white;
+}
+
+.nav-link-scrolled:hover {
+	border-bottom: 2px solid black;
 }
 
 #about {
@@ -26,11 +77,6 @@ section {
 #buynow {
 	background: purple;
 	height: 100vh;
-}
-
-.header-container {
-	display: flex;
-	justify-content: space-around;
 }
 
 .hc-btn-container {
@@ -68,29 +114,6 @@ section {
 
 .header-img {
 	height: 50px;
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-around;
-	width: 25%;
-}
-
-.navbar > p {
-	display: flex;
-	align-items: center;
-}
-
-.nav-link {
-	padding: 10px;
-	text-decoration: none;
-	color: white;
-	border-bottom: 2px solid transparent;
-	transition: all .2s ease-in;
-}
-
-.nav-link:hover {
-	border-bottom: 2px solid white;
 }
 
 .home-grid {
@@ -265,3 +288,43 @@ section {
 .video-banner {
 	padding-bottom: 15px;
 }
+
+.modal {
+	display: none;
+	position: fixed;
+	background: rgba(0,0,0,.4);
+	width: 100%;
+	height: 100vh;
+	z-index: 1000;
+}
+
+.modal > iframe {
+	position: relative;
+	width: 560px;
+	height: 316px;
+	margin-top: -158px;
+	margin-left: -280px;
+	top: 50%;
+	left: 50%;
+}
+
+/*MQs should be from largest to smallest screen*/
+
+/*Desktop*/
+@media (min-width: 1024px) {}
+
+/*Tablet*/
+@media (max-width: 768px) {}
+
+/*Large phone*/
+@media (max-width: 425px) {
+	#home {
+		background: black;
+	}
+}
+
+/*Medium phone*/
+@media (max-width: 375px) {}
+
+/*small phone*/
+@media (max-width: 320px) {}

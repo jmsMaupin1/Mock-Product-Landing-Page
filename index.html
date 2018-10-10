@@ -5,21 +5,24 @@
 	<title>Product Landing page</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="landing.css">
-	<link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<header id="header">
-	<div class="header-container">
+<header id="header" class="nav-header">
 		<img class="header-img" id="header-image" src="./images/stock-logo.png"/>
 		<nav id="nav-bar" class="navbar">
-			<p><a class="nav-link" href="#home">HOME</a></p>
-			<p><a class="nav-link" href="#features">FEATURES</a></p>
-			<p><a class="nav-link" href="#about">ABOUT</a></p>
-			<p><a class="active nav-link" href="#buynow">BUY</a></p>
+			<a class="nav-link" href="#home">HOME</a>
+			<a class="nav-link" href="#features">FEATURES</a>
+			<a class="nav-link" href="#about">ABOUT</a>
+			<a class="active nav-link" href="#buynow">BUY</a>
 		</nav>
-	</div>
 </header>
+
+<div class="modal">
+	<iframe id="video" src="https://www.youtube.com/embed/6EiI5_-7liQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 <main>
 	<section id="home">
@@ -136,7 +139,7 @@
 			<div class="parallax-center">
 				<div>
 					<h1 class="video-banner">Watch This</h1>
-					<button class="play">
+					<button id="video-play" class="play">
 						<i class="fas fa-play"></i>
 					</button>
 				</div>
