@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+}
+header {
+	position: absolute;
+	width: 100%;
+	top: 15px;
+}
+
+#about {
+	background: orange;
+	height: 100vh;
+}
+#features {
+	background: #eee;
+	height: 100vh;
+}
+#home {
+	background: #254cea;
+	height: 100vh;
+}
+#buynow {
+	background: purple;
+	height: 100vh;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.hc-btn-container {
+	float: left;
+}
+
+.hc-buttons {
+	padding: 20px 0;
+	margin-right: 10px;
+	width: 200px;
+	background: none;
+	color: white;
+	border: 1px solid white;
+	transition: all .2s ease-in;
+}
+
+.hc-buttons:hover {
+	border: 1px solid black;
+	background: white;
+	color: black;
+}
+
+.hc-action {
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.hc-action:hover {
+	background: none;
+	color: white;
+	border: 1px solid white;
+}
+
+
+.header-img {
+	height: 50px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+}
+
+.navbar > p {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid transparent;
+	transition: all .2s ease-in;
+}
+
+.nav-link:hover {
+	border-bottom: 2px solid white;
+}
+
+.home-grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+}
+
+.hg-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hg-image {
+	width: 350px;
+}
+
+.home-content {
+	font-size: 1.5em;
+	width: 90%;
+	color: white;
+}
+
+.home-content > h1, .home-content > p, .home-content > div {
+	padding: 10px;
+}
+
+.features-container {
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.features-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+}
+
+.fh-container {
+	font-size: 1.5em;
+}
+
+.fh-container > h1 {
+	padding-bottom: 50px;
+}
+
+.fh-container > p {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.features-grid {
+	display: grid;
+	height: 50vh;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.features-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.features-card > div > * {
+	padding: 10px;
+}
+
+.features-card > div > i {
+	color: blue;
+	font-size: 1.5em;
+}
+
+.bold {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
