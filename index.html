@@ -11,12 +11,15 @@
 <body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <header id="header" class="nav-header">
-		<img class="header-img" id="header-image" src="./images/stock-logo.png"/>
+		<img class="header-img" id="header-img" src="./images/stock-logo.png"/>
 		<nav id="nav-bar" class="navbar">
 			<a class="nav-link" href="#home">HOME</a>
 			<a class="nav-link" href="#features">FEATURES</a>
 			<a class="nav-link" href="#about">ABOUT</a>
-			<a class="active nav-link" href="#buynow">BUY</a>
+			<a class="nav-link" href="#buynow">BUY</a>
+			<a class="nav-link" href="#subscribe">SUBSCRIBE</a>
+			<a class="nav-link" href="#faqs">FAQ</a>
+			<a class="nav-link" href="#contact">CONTACT</a>
 		</nav>
 </header>
 
@@ -32,8 +35,8 @@
 					<h1>We Have The Best Quality</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus impedit quae, nulla, omnis rem possimus odit modi nam voluptates.</p>
 					<div class="hc-btn-container">
-						<button class="hc-buttons hc-action">BUY NOW</button> 
-						<button class="hc-buttons">LEARN MORE</button>
+						<a class="flat-button flat-btn-action" href="#buynow">BUY NOW</a> 
+						<a class="flat-button" href="#about">LEARN MORE</a>
 					</div>
 				</div>
 			</div>
@@ -45,9 +48,9 @@
 	</section>
 
 	<section id="features">
-		<div class="features-container">
-			<div class="features-header">
-				<div class="fh-container">
+		<div class="section-container">
+			<div class="section-header">
+				<div class="sh-container">
 					<h1>Features of the Product</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae culpa minus doloribus, explicabo illo odio et at excepturi, soluta aliquam.
@@ -55,42 +58,42 @@
 				</div>
 			</div>
 			<div class="features-grid">
-				<div class="features-card">
+				<div class="card-container">
 					<div>
 						<i class="fas fa-map-marker-alt"></i>
 						<p class="bold">GPS Tracking</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 					</div>
 				</div>
-				<div class="features-card">
+				<div class="card-container">
 					<div>
 						<i class="fas fa-wrench"></i>
 						<p class="bold">Easy to operate</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 					</div>
 				</div>
-				<div class="features-card">
+				<div class="card-container">
 					<div>
 						<i class="fas fa-globe-americas"></i>
 						<p class="bold">Easy To Connect</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 					</div>
 				</div>
-				<div class="features-card">
+				<div class="card-container">
 					<div>
 						<i class="fas fa-wifi"></i>
 						<p class="bold">Wifi Support</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 					</div>
 				</div>
-				<div class="features-card">
+				<div class="card-container">
 					<div>
 						<i class="fas fa-sliders-h"></i>
 						<p class="bold">Easy to Setup</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 					</div>
 				</div>
-				<div class="features-card">
+				<div class="card-container">
 					<div>
 						<i class="fas fa-phone"></i>
 						<p class="bold">Call & SMS Support</p>
@@ -103,35 +106,35 @@
 
 	<section id="about">
 		<div class="about-grid">
-			<div class="ag-cell">
+			<div class="cell-container">
 				<div>
-					<img src="./images/watch-1.png">
-					<p class="bold">Best Digital Watch</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
+					<img class="cell-img" src="./images/watch-1.png">
+					<p class="cell-header bold">Best Digital Watch</p>
+					<p class="cell-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
 				</div>
 			</div>
 
-			<div class="ag-cell">
+			<div class="cell-container">
 				<div>
-					<img src="./images/watch-3.png">
-					<p class="bold">Heartbeat Sensor</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
+					<img class="cell-img" src="./images/watch-3.png">
+					<p class="cell-header bold">Heartbeat Sensor</p>
+					<p class="cell-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
 				</div>
 			</div>
 
-			<div class="ag-cell">
+			<div class="cell-container">
 				<div>
-					<img src="./images/watch-4.png">
-					<p class="bold">Receive Calls</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
+					<img class="cell-img" src="./images/watch-4.png">
+					<p class="cell-header bold">Receive Calls</p>
+					<p class="cell-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
 				</div>
 			</div>
 
-			<div class="ag-cell">
+			<div class="cell-container">
 				<div>
-					<img src="./images/watch-7.png">
-					<p class="bold">Messaging</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
+					<img class="cell-img" src="./images/watch-7.png">
+					<p class="cell-header bold">Messaging</p>
+					<p class="cell-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, molestias.</p>
 				</div>
 			</div>
 		</div>
@@ -147,7 +150,150 @@
 		</div>
 	</section>
 
-	<section id="buynow"></section>
+	<section id="buynow">
+		<div class="section-container">
+			<div class="section-header">
+				<div class="sh-container">
+					<h1>Check Out Our Prices</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae culpa minus doloribus, explicabo illo odio et at excepturi, soluta aliquam.
+					</p>
+				</div>
+			</div>
+
+			<div class="buynow-grid">
+				<div class="cell-container">
+					<div class="cell-border">
+						<img class="cell-img" src="./images/watch-7.png">
+						<p class="cell-header bold">Digital Watch</p>
+						<p class="price bold">$60.00</p>
+						<a class="flat-button buynow-button" href="#">Buy Now</a>
+					</div>
+				</div>
+
+				<div class="cell-container">
+					<div class="cell-border">
+						<img class="cell-img" src="./images/watch-7.png">
+						<p class="cell-header bold">Digital Watch</p>
+						<p class="price bold">$60.00</p>
+						<a class="flat-button buynow-button" href="#">Buy Now</a>
+					</div>
+				</div>
+
+				<div class="cell-container">
+					<div class="cell-border">
+						<img class="cell-img" src="./images/watch-7.png">
+						<p class="cell-header bold">Digital Watch</p>
+						<p class="price bold">$60.00</p>
+						<a class="flat-button buynow-button" href="#">Buy Now</a>
+					</div>
+				</div>
+
+				<div class="cell-container">
+					<div class="cell-border">
+						<img class="cell-img" src="./images/watch-7.png">
+						<p class="cell-header bold">Digital Watch</p>
+						<p class="price bold">$60.00</p>
+						<a class="flat-button buynow-button" href="#">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="subscribe">
+		<div class="parallax sub-image">
+			<div class="parallax-center">
+				<div style="text-align: center;">
+					<h1 class="sub-banner">Subscribe To Our Newsletter</h1>
+					<form id="form" action="https://www.freecodecamp.com/email-submit">
+						<input id="email" name="email" class="email-sub" type="email" placeholder="Enter Your Email Here">
+						<input id="submit" class="submit" type="submit" value="Subscribe!">
+					</form>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<section id="faqs">
+		<div class="section-container">
+			<div class="section-header">
+				<div class="sh-container">
+					<h1>Check Out Our Prices</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae culpa minus doloribus, explicabo illo odio et at excepturi, soluta aliquam.
+					</p>
+				</div>
+			</div>
+
+			<div class="faqs-grid">
+				<div class="">
+					<div class="accordion">
+						<button class="accordion-tab">Is It Water Proof</button>
+						<button class="accordion-tab">Does it have Cellular Capabilities</button>
+						<button class="accordion-tab">Built-in GPS what can I do with it</button>
+						<button class="accordion-tab">How is it different than series one</button>
+					</div>
+				</div>
+				<div class="cell-container">
+					<img class="cell-img" src="./images/watch-7.png"/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="section-container">
+			<div class="section-header">
+				<div class="sh-container">
+					<h1>Contact Us!</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae culpa minus doloribus, explicabo illo odio et at excepturi, soluta aliquam.
+					</p>
+				</div>
+			</div>
+
+			<div class="contact-grid">
+				<form class="contact-form">
+					<input class="contact-info" type="text" placeholder="Name">
+					<input class="contact-info" type="email" placeholder="Email">
+					<textarea class="contact-msg" placeholder="Message"></textarea>
+					<input class="submit" type="submit" value="Send Message">
+				</form>
+				<div class="cell-container">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3172.4514293151537!2d-122.03336868473694!3d37.33181997984242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1539229117632" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="detail-grid">
+						<div class="cell-container-start">
+							<div>
+								<i class="ico fas fa-phone"></i>
+								<p class="detail-p">123-456-7890</p>
+							</div>
+						</div>
+
+						<div class="cell-container">
+							<div>
+								<i class="ico fas fa-globe-americas"></i>
+								<p class="detail-p">www.example.com</p>
+							</div>
+						</div>
+
+						<div class="cell-container-end">
+							<div>
+								<p class="bold pad-bot">follow us</p>
+								<div class="social-links">
+									<i class="fab fa-twitter"></i>
+									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-youtube"></i>
+									<i class="fab fa-linkedin-in"></i>
+								</div>
+							<div>
+						</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
 </main>
 
 <script src="./node_modules/jquery/dist/jquery.js"></script>
