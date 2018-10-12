@@ -40,18 +40,21 @@ $('a[href*="#"]')
   $(window).scroll(() => {
     let scroll = $(window).scrollTop();
 
-    if(scroll > 100) {
-      $("#header").addClass("nav-header-scrolled");
-      $("#header").removeClass("nav-header");
+    if($(window).width() > 426){
 
-      $("#nav-bar > a").addClass("nav-link-scrolled");
-      $("#nav-bar > a").removeClass("nav-link");
-    } else {
-      $("#header").addClass("nav-header");
-      $("#header").removeClass("nav-header-scrolled");
+      if(scroll > 100) {
+        $("#header").addClass("nav-header-scrolled");
+        $("#header").removeClass("nav-header");
 
-      $("#nav-bar > a").addClass("nav-link");
-      $("#nav-bar > a").removeClass("nav-link-scrolled");
+        $("#nav-bar > a").addClass("nav-link-scrolled");
+        $("#nav-bar > a").removeClass("nav-link");
+      } else {
+        $("#header").addClass("nav-header");
+        $("#header").removeClass("nav-header-scrolled");
+
+        $("#nav-bar > a").addClass("nav-link");
+        $("#nav-bar > a").removeClass("nav-link-scrolled");
+      }
     }
   })
 
@@ -65,5 +68,14 @@ $('a[href*="#"]')
     $(".modal").show();
     let vidUrl = $("#video").prop("src") + "?autoplay=1";
     $("#video").prop("src", vidUrl);
+  });
+
+  $(".navbar a.icon").click(() => {
+    $(".navbar").addClass("responsive")
+  });
+
+  $(".navbar a:not(.icon)").click(() => {
+    if($(".navbar").hasClass("responsive"))
+      $(".navbar").removeClass("responsive")
   });
 });
