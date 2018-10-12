@@ -513,22 +513,14 @@ section {
 	}
 
 	#home {
-		height: 80vh;
+		height: 50vh;
 	}
 
 	#features {
-		height: 90vh;
-	}
-
-	#about {
-		height: 150vh;
+		height: 80vh;
 	}
 
 	#contact {
-		height: 120vh;
-	}
-
-	#buynow {
 		height: 120vh;
 	}
 
@@ -596,6 +588,30 @@ section {
 
 /*Large phone*/
 @media (max-width: 600px) {
+
+	#home {
+		height: 80vh;
+	}
+
+	#features {
+		height: 90vh;
+	}
+
+	#about {
+		height: 150vh;
+	}
+
+	#contact {
+		height: 120vh;
+	}
+
+	#buynow {
+		height: 120vh;
+	}
+
+	.about-grid {
+		height: 120vh;
+	}
 
 	.nav-header {
 		justify-content: flex-start;
