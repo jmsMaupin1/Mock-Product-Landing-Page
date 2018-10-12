@@ -513,14 +513,18 @@ section {
 	}
 
 	#home {
-		height: 50vh;
-	}
-
-	#features {
 		height: 80vh;
 	}
 
+	#features {
+		height: 90vh;
+	}
+
 	#contact {
+		height: 120vh;
+	}
+
+	#buynow {
 		height: 120vh;
 	}
 
