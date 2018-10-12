@@ -520,6 +520,10 @@ section {
 		height: 90vh;
 	}
 
+	#about {
+		height: 150vh;
+	}
+
 	#contact {
 		height: 120vh;
 	}
