@@ -587,7 +587,7 @@ section {
 }
 
 /*Large phone*/
-@media (max-width: 426px) {
+@media (max-width: 600px) {
 
 	.nav-header {
 		justify-content: flex-start;
