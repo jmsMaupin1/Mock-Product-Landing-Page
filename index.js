@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  $("button").click(()=>alert($(window).width()))
+  $("button").click(()=>{
+    $(".home-content > h1").text($(window).width())
+  })
 	// Smooth Scrolling - Courtesy of css-tricks
 	// Select all links with hashes
 $('a[href*="#"]')
